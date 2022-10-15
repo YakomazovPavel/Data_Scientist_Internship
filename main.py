@@ -66,6 +66,7 @@ def main():
             query = """
                    DROP TABLE IF EXISTS temp;
                    """
+
             cursor.execute(query)
 
             return out
