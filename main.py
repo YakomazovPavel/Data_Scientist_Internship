@@ -30,10 +30,6 @@ def func1(n_customers):
 
         db.create_function('sumchar_all', 1, sumchar)
 
-        query_values = {
-            'n_customers': n_customers
-        }
-
         query = """
                 SELECT temp1.num_group, count(customers.id) FROM customers
                 LEFT JOIN (
